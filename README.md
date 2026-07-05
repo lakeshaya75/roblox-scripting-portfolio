@@ -59,6 +59,11 @@ Welcome! This repository contains a collection of Roblox Lua systems and code sa
 - Clickable pieces that move
 - Proper notation
 
+### 💬 Dialogue System
+- Typewriter effect for messages
+- Sound effects for messages
+- Changes based on NPC/player
+
 ## Current Project
 
 I'm currently developing a cooperative prehistoric survival game on Roblox featuring:
