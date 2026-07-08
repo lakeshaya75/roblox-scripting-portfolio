@@ -1,5 +1,3 @@
--- ServerScriptService/LobbyTeleportIntake.server.lua
-
 local Players = game:GetService("Players")
 local DataStoreService = game:GetService("DataStoreService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -8,7 +6,7 @@ local HttpService = game:GetService("HttpService")
 local STORE = DataStoreService:GetDataStore("PlayerData")
 
 local Remotes = ReplicatedStorage:WaitForChild("Remotes")
-local tpEvent = Remotes:WaitForChild("TP") -- RemoteEvent
+local tpEvent = Remotes:WaitForChild("TP")
 
 local function toJSON(t)
 	local ok, s = pcall(function() return HttpService:JSONEncode(t) end)
@@ -26,13 +24,11 @@ local function coerceInt(v)
 	if n >= 0 then return math.floor(n + 1e-5) else return math.ceil(n - 1e-5) end
 end
 
-local appliedOnce = {} -- [userId] = true (avoid double-apply)
+local appliedOnce = {} 
 
 local function applyTeleportRewards(userId, tp, source)
-	-- Prevent double-rewarding
 	if appliedOnce[userId] then return end
 
-	-- Sanitize inputs
 	local result   = (typeof(tp.result) == "string") and tp.result or "ok"
 	local addCreds = coerceInt(tp.credits)
 	local addXp    = coerceInt(tp.xp)
@@ -46,10 +42,6 @@ local function applyTeleportRewards(userId, tp, source)
 
 			old.credits = math.max(0, old.credits + addCreds)
 			old.xp      = math.max(0, old.xp + addXp)
-
-			-- optional audit fields if you want them:
-			-- old.lastResult   = result
-			-- old.lastResultAt = os.time()
 
 			finalCreds, finalXp = old.credits, old.xp
 			return old
@@ -66,7 +58,6 @@ local function applyTeleportRewards(userId, tp, source)
 			toJSON({credits = finalCreds, xp = finalXp})
 			))
 
-		-- Fire the event to just this player
 		local plr = Players:GetPlayerByUserId(userId)
 		if plr and tpEvent and tpEvent:IsA("RemoteEvent") then
 			tpEvent:FireClient(plr, {
@@ -85,7 +76,6 @@ Players.PlayerAdded:Connect(function(plr)
 	local ok, join = pcall(function() return plr:GetJoinData() end)
 	if not ok or not join then return end
 
-	-- Optional: only accept teleports from the same game/universe
 	if join.SourceGameId and join.SourceGameId ~= game.GameId then return end
 
 	local tp = join.TeleportData
