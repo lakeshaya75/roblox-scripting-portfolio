@@ -17,6 +17,18 @@ Welcome! This repository contains a collection of Roblox Lua systems and code sa
 
 ## Portfolio Projects
 
+### 🎮 Matchmaking System
+- Match management
+- Mode-based awareness
+- Player vs bot placement
+- Match creation deadline
+- Teleportation service
+
+### 📊 Datastore System
+- Handles player data
+- Retrieves data on rejoins
+- Combines statistics with achievements
+
 ### 🌲 Harvesting System 
 - Configurable harvestable resources
 - Health system
@@ -41,18 +53,6 @@ Welcome! This repository contains a collection of Roblox Lua systems and code sa
 - Raycast placement
 - Configurable spawn regions
 - Resource variants
-
-### 🎮 Matchmaking System
-- Match management
-- Mode-based awareness
-- Player vs bot placement
-- Match creation deadline
-- Teleportation service
-
-### 📊 Datastore System
-- Handles player data
-- Retrieves data on rejoins
-- Combines statistics with achievements
 
 ### ♟️ Chess System
 - Pairs players based on matchmaking
