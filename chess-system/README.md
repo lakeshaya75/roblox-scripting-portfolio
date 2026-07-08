@@ -18,15 +18,6 @@ A multiplayer chess implementation featuring move validation, turn management, g
 
 - Luau
 - RemoteEvents
-- ModuleScripts
+- ServerScripts
+- LocalScripts
 
-## Files
-
-- ChessService.lua
-- MoveValidator.lua
-- PieceManager.lua
-- BoardManager.lua
-
-## Status
-
-✅ Complete
