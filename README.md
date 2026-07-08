@@ -17,26 +17,26 @@ Welcome! This repository contains a collection of Roblox Lua systems and code sa
 
 ## Portfolio Projects
 
-### 🌲 Harvesting System *(Coming Soon)*
+### 🌲 Harvesting System 
 - Configurable harvestable resources
 - Health system
 - Drop tables
 - Server-authoritative validation
 - Procedural spawning
 
-### 🔨 Crafting System *(Coming Soon)*
+### 🔨 Crafting System
 - Recipe-based crafting
 - Ingredient validation
 - Modular item definitions
 - Inventory integration
 
-### 🎒 Inventory System *(Coming Soon)*
+### 🎒 Inventory System 
 - Stackable items
 - Hotbar support
 - Tool equipping
 - Client/server synchronization
 
-### 🪨 Procedural Resource Spawning *(Coming Soon)*
+### 🪨 Procedural Resource Spawning
 - Terrain-aware spawning
 - Raycast placement
 - Configurable spawn regions
@@ -81,5 +81,5 @@ As systems are completed and polished, they will be added to this repository.
 
 ## Contact
 
-lakeshaya75 on roblox
-@lakeshaya75 on discord
+Roblox: lakeshaya75 |
+Discord: @lakeshaya75
