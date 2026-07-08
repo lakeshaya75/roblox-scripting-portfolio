@@ -1,26 +1,37 @@
-
-# Chess System
+# 3D Chess System
 
 ## Overview
 
-A multiplayer chess implementation featuring move validation, turn management, game state synchronization, and rule enforcement.
+A Roblox 3D chess system featuring interactive pieces, clickable board squares, turn-based movement, capture handling, selection highlighting, animated piece movement, and an in-game notation UI.
 
 ## Features
 
-- Multiplayer gameplay
-- Legal move validation
-- Turn management
-- Piece movement
-- Check and checkmate detection
-- Server-authoritative gameplay
+- Interactive 3D chessboard
+- Clickable chess pieces
+- Clickable movement squares
+- Turn-based white/black control
+- Piece selection and deselection
+- Legal move highlighting for available squares
+- Capture handling
+- Animated piece movement with TweenService
+- Captured piece relocation
+- Move notation UI
+- Player matchup intro UI
+- Camera setup for chess gameplay
 
 ## Technologies
 
 - Luau
 - RemoteEvents
-- ServerScripts
+- ClickDetectors
+- TweenService
+- SelectionBox highlighting
+- StringValue / BoolValue state tracking
 - LocalScripts
-- CFrame movement and tweening
-- Duplicate / vast amount of parts and objects
-- UI Scripting
+- ServerScripts
+- Roblox UI scripting
+- Camera manipulation
 
+## Status
+
+Archived / Prototype
