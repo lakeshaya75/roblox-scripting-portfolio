@@ -1,4 +1,4 @@
-# Roblox Scripting Portfolio
+# Lake's Roblox Scripting Portfolio
 
 Welcome! This repository contains a collection of Roblox Lua systems and code samples that I've developed across personal projects and commissioned work. The goal of this portfolio is to showcase my programming experience, code organization, and approach to building scalable gameplay systems.
 
