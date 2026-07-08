@@ -59,10 +59,12 @@ Welcome! This repository contains a collection of Roblox Lua systems and code sa
 - Clickable pieces that move
 - Proper notation
 
-### 💬 Dialogue System
+### 💬 Story/Event System
 - Typewriter effect for messages
 - Sound effects for messages
 - Changes based on NPC/player
+- Major story events
+- Transition frames and unique challenges
 
 ## Current Project
 
