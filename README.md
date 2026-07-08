@@ -78,3 +78,6 @@ I'm currently developing a cooperative prehistoric survival game on Roblox featu
 As systems are completed and polished, they will be added to this repository.
 
 ## Contact
+
+lakeshaya75 on roblox
+@lakeshaya75 on discord
