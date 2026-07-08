@@ -20,4 +20,7 @@ A multiplayer chess implementation featuring move validation, turn management, g
 - RemoteEvents
 - ServerScripts
 - LocalScripts
+- CFrame movement and tweening
+- Duplicate / vast amount of parts and objects
+- UI Scripting
 
